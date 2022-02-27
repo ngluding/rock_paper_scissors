@@ -1,1 +1,1 @@
-# rock_paper_scissors
+This is my first javascript project! I hope to build off this and make more complex programs and sites :) 
