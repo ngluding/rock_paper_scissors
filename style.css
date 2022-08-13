@@ -5,16 +5,23 @@ body {
     align-items: center;
 }
 
+h1 {
+    text-align: center;
+}
+
 .middle {
     display: flex;
     align-items: center;
     gap: 12em;
+    background-color: black;
+    color: whitesmoke;
 }
 
 .top_right {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: auto;
+    margin-right: 60px;
     gap: 15em;
 }
 
@@ -23,8 +30,8 @@ body {
     flex-direction: column;
     border: solid 5px black;
     align-items: flex-start;
-    margin-left: 55em;
-    margin-bottom: -30em;
+    /* margin-left: 55em;
+    margin-bottom: -30em; */
     padding: 0 10px 0 10px;
     background: black;
 }
@@ -94,7 +101,7 @@ button {
     display: flex;
     align-items: center;
     border: 5px solid black;
-    margin: 20px;
+    /* margin: 20px; */
     padding: 0 40px 0 40px;
     gap: 60px;
 }
@@ -124,3 +131,54 @@ button {
     text-align: center;
 }
 
+@media (max-width: 600px) {
+    .top_right {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 15em;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        border: solid 5px black;
+        align-items: flex-start;
+        padding: 0 10px 0 10px;
+        background: black;
+    }
+
+    .playerSelection,
+    .computerSelection {
+        display: flex;
+        gap: 40px;
+    }
+
+    .pOption > img {
+        width: auto;  
+        height: 50px;
+        border: 5px solid black;
+        transition: all 50ms ease;
+        background: whitesmoke;
+        padding: 5px;
+    }
+
+    .cOption > img {
+        width: auto;  
+        height: 50px;
+        border: 5px solid black;
+        background: whitesmoke;
+        padding: 5px;
+    }
+
+    .score {
+        display: flex;
+        align-items: center;
+        border: 5px solid black;
+        /* margin: 20px; */
+        padding: 0 20px 0 20px;
+        gap: 30px;
+    }
+
+}
